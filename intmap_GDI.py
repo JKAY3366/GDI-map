@@ -37,7 +37,7 @@ new_file2.head
 # In[5]:
 
 
-states = gpd.read_file("india_telengana.geojson")
+states = gpd.read_file("india.geojson")
 states
 
 

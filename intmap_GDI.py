@@ -101,10 +101,4 @@ output_notebook()
 #Display plot
 show(layout)
 
-
-# Note that the slider in the jupyter output will not work. We need to create a local server to view the interactive map.
-# To create a local server and view the interactive map:<br>
-# Open Anaconca Prompt.<br>
-# Change the working directory to current working directory.<br>
-# Type the following command:<br> 
-# `bokeh serve --show intmap-GDI.ipynb`
+# The output in the Jupyter notebook will be a static map. The heroku application has the interactive map.

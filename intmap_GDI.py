@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# This code is an input for a simple Heroku application that displays an interactive chloropleth map.
+# The map of India will display the GDI value for each state, when we hover above the state. The year slider lets the user change the year of data.
+# Copy and paste this link to access the Heroku application: https://gdi-mapp.herokuapp.com/intmap_GDI
+# Note: you will see a blank white page for a few seconds after the application loads. Wait for a few seconds for the map to display. 
+#       Similarly, wait for a few seconds after adjusting the year slider for the map to refresh. The hover tool works instantly. 
+
 # In[2]:
 
 
@@ -23,7 +29,7 @@ from bokeh.layouts import widgetbox, row, column
 import requests
 import io
     
-# Downloading the csv file from your GitHub account
+# Downloading the csv file from the GitHub account
 
 url2 = "https://raw.githubusercontent.com/JKAY3366/TrialMap/main/modified-GDI.csv" # Make sure the url is the raw version of the file on GitHub
 downloads = requests.get(url2).content
